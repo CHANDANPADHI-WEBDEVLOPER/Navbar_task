@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 20px 20px;
+    background-color:yellow;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a{
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: red;
+}
+.dropdown-content a:hover{
+    background-color: red;
+}
+.dropdown:hover .dropBtn{
+    background-color: rgb(26, 81, 165);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    width: 150px;
+    z-index: 1;
+}
+.dropdown-content a {
+   display: block;
+   color: white;
+}
+
+ .dropBtn{
+    color: red;
+    font-size: 20px;
+}
+
+.sub-dropdown:hover{
+    margin-bottom: 50px;
+}
+
+.sub-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: red;
+    width: 150px;
+    left: 30px;
+    z-index: 1;
+    top: 20px;
+}
+.sub-dropdown:hover .sub-dropdown-content{
+    display: block;
+    background-color: green;
+}
+#topBtn{
+    background-color: blue;
+    padding: 8px 15px ;
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.button_container{
+    display: flex;
+    justify-content:flex-end;
+}
+
+ 
+
